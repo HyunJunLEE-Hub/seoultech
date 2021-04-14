@@ -10,7 +10,6 @@ context = heaan.Context(params) # 컨텍스트 객체는 파라미터 저장, �
 secret_key = heaan.SecretKey(context) # generate secret key
 
 
-
 public_key_path = "./public_key_path"
 public_key  = heaan.PublicKeyPack(context, secret_key, public_key_path)
 # ConjKey : 암호문을 결합하기 위한 공개 키
