@@ -6,8 +6,8 @@ context = heaan.Context(params) # 컨텍스트 객체는 파라미터 저장, �
 
 
 
-
 secret_key = heaan.SecretKey(context) # generate secret key
+
 
 
 public_key_path = "./public_key_path"
@@ -16,7 +16,6 @@ public_key  = heaan.PublicKeyPack(context, secret_key, public_key_path)
 # EncKey : 메시지를 암호화하기 위한 공개 키
 # MultKey: 암호 텍스트의 곱셈을 위한 공개 키
 # RotKey{rot_idx} : {rot_idx} 암호문을 회전하기 위한 공개 키
-
 
 
 
