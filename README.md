@@ -1,4 +1,6 @@
 # AutoStockTrade
+여기서 사용된 파이썬 버전은 3.8 32bit입니다.
+
 AutoTrade.py
 
 크레온API를 사용하여 주식 자동매매를 실행하고 그 결과를 slack bot을 활용하여 알림을 받을 수 있게 하는 과정입니다.
