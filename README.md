@@ -24,7 +24,7 @@ AutoConnect.py
 작업스케줄러를 통해서 위의 과정 모두 자동화가 가능합니다.
 
 # Homomorphic Encryption(pi-HEaaN)
-pi-HEaaN에 대한 듀토리얼을 따로 정리한 코드입니다.
+pi-HEaaN에 대한 튜토리얼을 따로 정리한 코드입니다.
 
 # selenium
 "관심있는 이미지"에 대한 검색을 하고 검색한 이미지를 수집하는 코드입니다. 
