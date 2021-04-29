@@ -28,7 +28,6 @@ chosun12 = pd.read_csv(r'C:\Users\user\Desktop\unstructed\naver_조선3\naver_�
 
 # In[49]:
 
-
 joongang1 = pd.read_csv(r'C:\Users\user\Desktop\unstructed\네이버_중앙soon\naver_중앙1.csv', encoding = 'utf-8')
 joongang2 = pd.read_csv(r'C:\Users\user\Desktop\unstructed\네이버_중앙soon\naver_중앙2.csv', encoding = 'utf-8')
 joongang3 = pd.read_csv(r'C:\Users\user\Desktop\unstructed\네이버_중앙soon\naver_중앙3.csv', encoding = 'utf-8')
