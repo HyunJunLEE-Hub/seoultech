@@ -78,10 +78,15 @@ pi-HEaaN version 0.2.0에 대한 튜토리얼을 따로 정리한 코드입니�
 install.packages("DNH4") 설치, library(DNH4)불러옴
 
 getContent() == 기사 url을 입력으로 받아 관련 내용을 크롤링
+
 getMainCategory() == 기사의 대분류 항목을 가져옴
+
 getSubCategory() == 기사의 소분류 항목을 가져옴
+
 getUrlListByCategory() == 뉴스 리스트 페이지에서 기사의 제목과 링크를 가져옴
+
 getMaxPageNum() == 뉴스 리스트 페이지의 마지막 페이지 번호 가져옴
+
 getComment() == 기사 url을 입력으로 받아 그 기사의 댓글 정보를 가져옴 
 
 comments<-as.data.frame(comments)로 데이터프레임으로 만들고 원하는 열을 가져올 수 있다.
