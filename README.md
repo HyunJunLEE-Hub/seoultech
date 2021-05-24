@@ -1,3 +1,7 @@
+# README.md
+별도의 언급없는 환경은 window 10, 파이썬 3.x가 default 입니다.
+
+
 # AutoStockTrade
 
 CREON Plus API를 사용하여 주식 자동매매를 실행하고 그 결과를 slacker 라이브러리를 사용, slack bot을 통해 매매 알림을 받을 수 있습니다.
@@ -8,7 +12,7 @@ https://github.com/INVESTAR/StockAnalysisInPython
 ### 환경
 Python version == 3.x 32bit 및 IDE가 관리자 권한으로 설정
 대신증권 CREON Plus에 로그인
-os == window // win32com 및 pywinauto 모듈의 제약
+os == window10 // win32com 및 pywinauto 모듈의 제약
 
 아래의 CREON Plus API 홈페이지에 있는 코드들을 통해서 원하는 작업을 할 수도 있습니다.
 https://money2.creontrade.com/e5/mboard/ptype_basic/plusPDS/DW_Basic_List.aspx?boardseq=299&m=9505&p=8833&v=8639
@@ -41,7 +45,7 @@ win32com는 윈도우 상에서 Python을 이용하여 ActiveX 함수를 호출�
 
 8 code 자신의 slacker의 oauth
 
-134 code 변동성 돌파전략의 변동폭 비율 조정, 현재는 0.5
+134 code 변동성 돌파전략의 변동폭 비율, 현재는 0.5
 
 246 code 매수하고자 하는 종목코드 리스트 // ex) https://finance.daum.net/quotes/A360140#home 마지막 "A360140" 가 종목코드
 
@@ -57,11 +61,15 @@ pywinauto는 윈도우 O/S용 프로그램의 다이얼로그나 컨트롤에, �
 윈도우의 경우, 윈도우 키 -> 작업 스케줄러 앱을 통해서 위의 과정 모두 자동화가 가능합니다.
 
 # Homomorphic Encryption(pi-HEaaN)
-pi-HEaaN에 대한 튜토리얼을 따로 정리한 코드입니다.
+pi-HEaaN version 0.2.0에 대한 튜토리얼을 따로 정리한 코드입니다.
 
 # Sentiment analysis
 
-DNH4, N2H4라는 R 라이브러리를 사용해 댓글의 싫어요 대비 좋아요가 더 많은 기준으로 네이버, 다음 각 언론사 별 댓글을 수집합니다.
+댓글을 수집 한 후 싫어요 대비 좋아요가 더 많은 기준으로 100개의 각 언론사별 댓글로 전처리 및 학습 후 감성 분석을 통해서 보수 진보를 구별 한 후 각 언론사 별 구독자 성향을 조사할 수 있습니다.
+
+수집한 댓글은 형태소 분석기 Okt(KoNLPy 0.5.2) 사용 및 NLTK(version 3.6.2)로 자연어 처리, keras의 Sequential 모델을 사용하여 1 = 보수, 0 = 진보로 분류
+
+각 언론사 댓글을 통해 어느쪽 정치 성향이 많이 보는지를 파악 할 수 있다.
 
 ### DNH4 라이브러리 사용예시
 
@@ -76,15 +84,8 @@ getComment() == 기사 url을 입력으로 받아 그 기사의 댓글 정보를
 
 comments<-as.data.frame(comments)로 데이터프레임으로 만들고 원하는 열을 가져올 수 있다.
 
-댓글을 수집 한 후 싫어요 대비 좋아요가 더 많은 기준으로 100개의 각 언론사별 댓글로 전처리 및 학습 후
-
-감성 분석을 통해서 보수 진보를 구별 한 후 각 언론사 별 구독자 성향을 조사할 수 있습니다.
-
-
-
 # Transformer
 pytorch를 사용해서 Transformer 모델을 구현하였습니다.
-
 사용한 데이터는 WMT14 데이터이고 GPU환경 문제로 인해서 코랩에서 작업하였습니다.
 
 # selenium
