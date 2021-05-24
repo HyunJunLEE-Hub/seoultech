@@ -11,7 +11,9 @@ https://github.com/INVESTAR/StockAnalysisInPython
 
 ### 환경
 Python version == 3.x 32bit 및 IDE가 관리자 권한으로 설정
+
 대신증권 CREON Plus에 로그인
+
 os == window10 // win32com 및 pywinauto 모듈의 제약
 
 아래의 CREON Plus API 홈페이지에 있는 코드들을 통해서 원하는 작업을 할 수도 있습니다.
