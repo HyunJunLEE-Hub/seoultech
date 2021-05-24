@@ -5,7 +5,7 @@ CREON Plus API를 사용하여 주식 자동매매를 실행하고 그 결과를
 "파이썬 증권 데이터 분석" 책 및 github을 참고하였습니다.
 https://github.com/INVESTAR/StockAnalysisInPython
 
-## 환경
+### 환경
 Python version == 3.x 32bit 및 IDE가 관리자 권한으로 설정
 대신증권 CREON Plus에 로그인
 os == window // win32com 및 pywinauto 모듈의 제약
@@ -13,7 +13,7 @@ os == window // win32com 및 pywinauto 모듈의 제약
 아래의 CREON Plus API 홈페이지에 있는 코드들을 통해서 원하는 작업을 할 수도 있습니다.
 https://money2.creontrade.com/e5/mboard/ptype_basic/plusPDS/DW_Basic_List.aspx?boardseq=299&m=9505&p=8833&v=8639
 
-## 사전 금융 지식
+### 사전 금융 지식
 
 변동성 돌파 전략 : 지난날의 고가와 저가의 차이를 계산해서 k 만큼 곱한 값을 오늘 시가에서 변동 폭 만큼 올랐으면 매수하는 전략
 
@@ -25,7 +25,7 @@ https://money2.creontrade.com/e5/mboard/ptype_basic/plusPDS/DW_Basic_List.aspx?b
 
 4. FOK : 전량 체결되지 않으면 주문 자체를 취소
 
-## AutoTrade.py
+### AutoTrade.py
 
 win32com는 윈도우 상에서 Python을 이용하여 ActiveX 함수를 호출할 수 있도록 하는 라이브러리
 
@@ -37,7 +37,7 @@ win32com는 윈도우 상에서 Python을 이용하여 ActiveX 함수를 호출�
 
 활동 시간안에 매매를 하며 15:15에는 보유한 샃품을 모두 매도를 합니다.
 
-##주요code
+### 주요code
 
 8 code 자신의 slacker의 oauth
 
@@ -48,7 +48,7 @@ win32com는 윈도우 상에서 Python을 이용하여 ActiveX 함수를 호출�
 263 ~ code 매매 시간설정
 
 
-## AutoConnect.py
+### AutoConnect.py
 
 pywinauto는 윈도우 O/S용 프로그램의 다이얼로그나 컨트롤에, 마우스 클릭이나 키보드 입력 등을, 사람이 직접 하지 않고 프로그램이 대신할 수 있도록 해주는 python 라이브러리
 
@@ -63,7 +63,7 @@ pi-HEaaN에 대한 튜토리얼을 따로 정리한 코드입니다.
 
 DNH4, N2H4라는 R 라이브러리를 사용해 댓글의 싫어요 대비 좋아요가 더 많은 기준으로 네이버, 다음 각 언론사 별 댓글을 수집합니다.
 
-## DNH4 라이브러리 사용예시
+### DNH4 라이브러리 사용예시
 
 install.packages("DNH4") 설치, library(DNH4)불러옴
 
