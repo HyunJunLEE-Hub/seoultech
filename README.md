@@ -62,6 +62,8 @@ pywinauto는 윈도우 O/S용 프로그램의 다이얼로그나 컨트롤에, �
 
 윈도우의 경우, 윈도우 키 -> 작업 스케줄러 앱을 통해서 위의 과정 모두 자동화가 가능합니다.
 
+코드의 C:\CREON\STARTER\coStarter.exe 크레온이 깔려있는 경로입니다.
+
 # Homomorphic Encryption(pi-HEaaN)
 pi-HEaaN version 0.2.0에 대한 튜토리얼을 따로 정리한 코드입니다.
 
