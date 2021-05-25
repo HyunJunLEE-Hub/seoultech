@@ -41,7 +41,7 @@ win32com는 윈도우 상에서 Python을 이용하여 ActiveX 함수를 호출�
 
 시간은 LP(유동성 공급자) 활동 시간(09:05 ~ 15:20)에 맞춰져 있으며 주문 호가는 최유리 FOK 방식을 사용했습니다.
 
-활동 시간안에 매매를 하며 15:15에는 보유한 샃품을 모두 매도를 합니다.
+활동 시간안에 매매를 하며 15:15에는 보유한 품을 모두 매도를 합니다.
 
 ### 주요code
 
@@ -69,7 +69,7 @@ pi-HEaaN version 0.2.0에 대한 튜토리얼을 따로 정리한 코드입니�
 
 댓글을 수집 한 후 싫어요 대비 좋아요가 더 많은 기준으로 100개의 각 언론사별 댓글로 전처리 및 학습 후 감성 분석을 통해서 보수 진보를 구별 한 후 각 언론사 별 구독자 성향을 조사할 수 있습니다.
 
-수집한 댓글은 형태소 분석기 Okt(KoNLPy 0.5.2) 사용 및 NLTK(version 3.6.2)로 자연어 처리, keras의 Sequential 모델을 사용하여 1 = 보수, 0 = 진보로 분류
+수집한 댓글은 형태소 분석기 Okt(KoNLPy 0.5.2) 사용 및 NLTK(3.6.2)로 자연어 처리, keras의 Sequential 모델을 사용하여 1 = 보수, 0 = 진보로 분류
 
 각 언론사 댓글을 통해 어느쪽 정치 성향이 많이 보는지를 파악 할 수 있다.
 
@@ -92,11 +92,24 @@ getComment() == 기사 url을 입력으로 받아 그 기사의 댓글 정보를
 comments<-as.data.frame(comments)로 데이터프레임으로 만들고 원하는 열을 가져올 수 있다.
 
 # Transformer
+
+논문 제목 : "Attention Is All You Need" 
+링크 : https://arxiv.org/pdf/1706.03762.pdf%EF%BC%89%E6%8F%8F%E8%BF%B0%E4%BA%86%E8%BF%99%E6%A0%B7%E5%81%9A%E7%9A%84%E5%8E%9F%E5%9B%A0%E3%80%82
+
+트랜스포머(Transformer)는 "Attention is all you need"에서 나온 모델로 기존의 seq2seq의 구조인 인코더-디코더를 따르면서도, 논문의 이름처럼 어텐션(Attention)만으로 구현한 모델입니다. 
+이 모델은 RNN을 사용하지 않고, 인코더-디코더 구조를 설계하였음에도 성능도 RNN보다 우수하다는 특징을 갖고있습니다.
+
 pytorch를 사용해서 Transformer 모델을 구현하였습니다.
 사용한 데이터는 WMT14 데이터이고 GPU환경 문제로 인해서 코랩에서 작업하였습니다.
 
-### version
-colab
+spacy(2.2.4)를 사용해서 자연어 처리, 2개의 Field로 구성, BucketIterator로 모든 텍스트 작업을 일괄로 처리하고 단어를 인덱스 숫자로 변환 후에 트랜스포머 모델 입력값으로 입력한다.
+
+트랜스포머를 각 단위별로 클래스를 만들고 인스턴스를 만든 후에 모델을 학습시킨다.
+
+모델 평가는 torchtext.data.metrics에 있는 bleu_score로 계산한다. (추후 추가)
+
+### Colab 환경
+
 torch 1.8.1+cu101            
 torchtext 0.6.0         
 torchvision 0.9.1+cu101
