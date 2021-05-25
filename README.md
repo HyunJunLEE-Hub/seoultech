@@ -91,6 +91,12 @@ getComment() == 기사 url을 입력으로 받아 그 기사의 댓글 정보를
 
 comments<-as.data.frame(comments)로 데이터프레임으로 만들고 원하는 열을 가져올 수 있다.
 
+1. 각 포털별 뉴스 크롤링.R을 통해서 댓글을 수집한 후 
+
+2. 기사 전처리.py를 통해서 싫어요 대비 좋아요가 많은 상위 100개를 병합
+
+3. 전처리한 csv파일을 가지고 포털사이트 뉴스 댓글 분석.py에 입력
+
 # Transformer
 
 논문 제목 : "Attention Is All You Need" 
