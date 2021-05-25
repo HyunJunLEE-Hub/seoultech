@@ -45,7 +45,7 @@ win32com는 윈도우 상에서 Python을 이용하여 ActiveX 함수를 호출�
 
 ### 주요code
 
-8 code 자신의 slacker의 oauth
+8 code 자신의 slack의 oauth
 
 134 code 변동성 돌파전략의 변동폭 비율, 현재는 0.5
 
