@@ -19,13 +19,13 @@ HE-Transformer는 코드는 공개 할 수 없으며 전체적인 과정은 아�
 CKKS 곱셈의 결과 암호문들은 각 슬롯에 노이즈와 함께 결과값이 출력된다. 연속적인 연산을 하게 되면 노이즈가 결국 암호문 전체에 영향을 주게 되어 복호화를 하지 못한다. 이러한 문제를 동형암호는 Bootstrapping 연산 [3] 을 통해 해결한다.
 CKKS에서의 Bootstrapping 연산은 슬롯의 값이 10 이상에서는 연산이 작동하지 않기 때문에 Logit 값에 0.01, 제곱 함수 전에 0.1을 곱해 슬롯 값을 10보다 작게 만들어 준다.
 
-## HE-Transformer ##
-실제로 학습한 가중치를 가지고 데이터 프레임으로  Transformer를 구현
+## 평문 HE-Transformer ##
+실제로 학습한 가중치를 가지고 Data Frame으로 Transformer를 구현
 
 
 
 
-
+## 참고 문헌 ##
 [1] Cheon, J. H., Kim, A., Kim, M., & Song, Y. (2017, December). Homomorphic encryption for arithmetic of approximate numbers. In International Conference on the Theory and Application of Cryptology and Information Security (pp. 409-437). Springer, Cham.
 
 [2] Gilad-Bachrach, R., Dowlin, N., Laine, K., Lauter, K., Naehrig, M., & Wernsing, J. (2016, June). Cryptonets: Applying neural networks to encrypted data with high throughput and accuracy. In International conference on machine learning (pp. 201-210). PMLR.
