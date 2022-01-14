@@ -2,7 +2,7 @@
 
 CREON Plus API를 사용하여 주식 자동매매를 실행하고 그 결과를 slacker 라이브러리를 사용, slack bot을 통해 매매 알림을 받을 수 있다.
 
-"파이썬 증권 데이터 분석" 책 및 github을 참고하였습니다.
+"파이썬 증권 데이터 분석" 책 및 github을 참고하였다.
 https://github.com/INVESTAR/StockAnalysisInPython
 
 ### 환경
