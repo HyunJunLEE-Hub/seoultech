@@ -22,7 +22,7 @@ HE-Transformer의 코드는 공개 할 수 없으며 전체적인 과정은 아�
 
 ## HE-Transformer_Pytorch(English_to_Germa) ##
 Transformer를 Pytorch를 통해 구현
-#### HE-Transformer 구현을 위한 가중치 학습 ####
+### HE-Transformer 구현을 위한 가중치 학습 ###
 기계 번역 모델은 학습 과정에서 번역하고자 하는 데이터에 대한 중요 내용을 내포하고 있지 않다.
 그래서 모델을 평문에서 학습해도 사용자가 번역하고자 하는 문장에 대해 알 수 없기에 평문에서 학습해도 무방하다.   
 
