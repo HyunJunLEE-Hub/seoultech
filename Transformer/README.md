@@ -17,11 +17,15 @@ HE-Transformer는 코드는 공개 할 수 없으며 전체적인 과정은 아�
 기계 번역 모델은 학습 과정에서 번역하고자 하는 데이터에 대한 중요 내용을 내포하고 있지 않다.
 그래서 모델을 평문에서 학습해도 사용자가 번역하고자 하는 문장에 대해 알 수 없기에 평문에서 학습해도 무방하다.   
 
+HE-Transformer를 사용하기 위해 평문 Transformer에서 학습할 떄도 Softmax 및 ReLU 함수의 연산을 회피하거나 근사한다.
+
 CKKS 곱셈의 결과 암호문들은 각 슬롯에 노이즈와 함께 결과값이 출력된다. 연속적인 연산을 하게 되면 노이즈가 결국 암호문 전체에 영향을 주게 되어 복호화를 하지 못한다. 이러한 문제를 동형암호는 Bootstrapping 연산 [3] 을 통해 해결한다.
 CKKS에서의 Bootstrapping 연산은 슬롯의 값이 10 이상에서는 연산이 작동하지 않기 때문에 Logit 값에 0.01, 제곱 함수 전에 0.1을 곱해 슬롯 값을 10보다 작게 만들어 준다.
 
 ## 평문 HE-Transformer ##
-실제로 학습한 가중치를 가지고 Data Frame으로 Transformer를 구현
+실제로 학습한 HE-Transformer_Pytorch(English_to_Germa)의 가중치를 가지고 Data Frame으로 Transformer를 구현
+
+HE-Transformer의 중간 연산값을 비교하기 위한 코드
 
 
 
