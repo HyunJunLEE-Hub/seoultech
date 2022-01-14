@@ -1,3 +1,9 @@
+# Transformer
+논문 제목 : "Attention Is All You Need" 링크 : https://arxiv.org/pdf/1706.03762.pdf%EF%BC%89%E6%8F%8F%E8%BF%B0%E4%BA%86%E8%BF%99%E6%A0%B7%E5%81%9A%E7%9A%84%E5%8E%9F%E5%9B%A0%E3%80%82
+
+트랜스포머(Transformer)는 "Attention is all you need"에서 나온 모델로 기존의 seq2seq의 구조인 인코더-디코더를 따르면서 어텐션(Attention)만으로 구현한 모델이다.   
+RNN을 사용하지 않고, 인코더-디코더 구조를 설계하였음에도 성능도 RNN보다 우수하다는 특징을 갖고 있다.
+
 # HE-Transformer 구현을 위한 평문 Transformer 구현 #
 HE-Transformer는 동형암호화된 문장에 대해 번역 기능을 복호화 없이 수행할 수 있는 번역기 모델이다.   
 HE-Transformer의 구조는 기본적으로 Original Transformer를 따르지만, 동형암호화된 입력에 대해서 구동되기 위해서 주요 기능이 변형되어 구현된다.
