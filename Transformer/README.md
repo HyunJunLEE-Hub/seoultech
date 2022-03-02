@@ -36,8 +36,9 @@ CKKS에서의 Bootstrapping 연산은 슬롯의 값이 10 이상에서는 연산
 
 HE-Transformer의 중간 연산값을 비교하기 위한 코드
 
-
-
+## 해당 논문 ##
+위 설명에 대한 더 자세한 설명은 아래의 링크에 자세히 설명되어 있습니다.
+http://www.dcollection.net/handler/snut/200000603234
 
 ## 참고 문헌 ##
 [1] Cheon, J. H., Kim, A., Kim, M., & Song, Y. (2017, December). Homomorphic encryption for arithmetic of approximate numbers. In International Conference on the Theory and Application of Cryptology and Information Security (pp. 409-437). Springer, Cham.
